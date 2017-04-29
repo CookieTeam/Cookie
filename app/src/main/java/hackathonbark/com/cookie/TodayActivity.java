@@ -25,8 +25,10 @@ public class TodayActivity extends AppCompatActivity implements View.OnClickList
     public void onClick(View v) {
         switch(v.getId()) {
             case R.id.btnSetting:
-                startActivity(new Intent(this, SettingActivity.class));
+//                startActivity(new Intent(this, SettingActivity.class));
+                startActivity(new Intent(this, TypeSettingActivity.class));
                 break;
+
 
             case R.id.btnCookie:
                 startActivity(new Intent(this, TodayCookieActivity.class));

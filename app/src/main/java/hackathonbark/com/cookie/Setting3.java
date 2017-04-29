@@ -85,8 +85,8 @@ public class Setting3 extends android.support.v4.app.Fragment {
     @Override
     public void onResume() {
         super.onResume();
-        picker =
-                (com.igalata.bubblepicker.rendering.BubblePicker)container.findViewById(R.id.picker);
+//        picker =
+//                (com.igalata.bubblepicker.rendering.BubblePicker)container.findViewById(R.id.picker);
     }
 
     @Override
@@ -96,15 +96,15 @@ public class Setting3 extends android.support.v4.app.Fragment {
         final TypedArray colors = getResources().obtainTypedArray(R.array.colors);
 //        final TypedArray images = getResources().obtainTypedArray(R.array.images);
         final Context c = context;
-        picker.setItems(new ArrayList<PickerItem>() {{
-            for (int i = 0; i < titles.length; ++i) {
-                add(new PickerItem(titles[i],
-                        colors.getColor((i * 2) % 8, 0),
-                        ContextCompat.getColor(c, android.R.color.white),
-                        ContextCompat.getDrawable(c, R.drawable.i)
-                ))
-            }
-        }});
+//        picker.setItems(new ArrayList<PickerItem>() {{
+//            for (int i = 0; i < titles.length; ++i) {
+//                add(new PickerItem(titles[i],
+//                        colors.getColor((i * 2) % 8, 0),
+//                        ContextCompat.getColor(c, android.R.color.white),
+//                        ContextCompat.getDrawable(c, R.drawable.i)
+//                ))
+//            }
+//        }});
     }
 
     @Override

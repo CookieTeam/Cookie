@@ -12,7 +12,7 @@
         android:text="@string/hello_blank_fragment" />
 
     <com.igalata.bubblepicker.rendering.BubblePicker
-        android:id="@+id/picker"
+        android:id="@+id/pickedr"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:backgroundColor="@android:color/white" />

@@ -21,7 +21,7 @@ android {
 
 
 dependencies {
-    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile fileTree(include: ['*.jar'], dir: 'libs')
     androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
@@ -32,5 +32,8 @@ dependencies {
     compile 'com.tsengvn:Typekit:1.0.0'
     testCompile 'junit:junit:4.12'
     compile 'com.getbase:floatingactionbutton:1.10.1'
-    compile 'com.github.igalata:Bubble-Picker:v0.2.1'
+    //    compile 'com.github.igalata:Bubble-Picker:v0.2.1'
+    //        compile(name:'bubblepicker-release', ext:'aar')
+    compile 'com.github.igalata:bubblepicker-release:1.0@aar'
+    compile 'org.jetbrains.kotlin:kotlin-stdlib:1.1.2'
 }
