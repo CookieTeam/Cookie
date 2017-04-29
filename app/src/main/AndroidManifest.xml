@@ -3,6 +3,7 @@
     package="hackathonbark.com.cookie">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
 
     <application
         android:allowBackup="true"
@@ -17,7 +18,11 @@
 
         <activity
             android:name=".MainActivity"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen">
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen" />
+        <activity
+            android:name=".SignUpActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen"></activity>
+        <activity android:name=".ChefTestActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -25,10 +30,12 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".SignUpActivity"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen">>
+        <receiver
+            android:name=".CookieBroadcaseReceiver"
+            android:enabled="true"
+            android:exported="true" />
 
-        </activity>
+        <activity android:name=".CookieActivity"></activity>
     </application>
 
 </manifest>
