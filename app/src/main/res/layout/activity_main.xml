@@ -16,6 +16,30 @@
         android:layout_y="0dp"
         android:background="@android:color/black" />
 
+    <EditText
+        android:id="@+id/editText_id"
+        android:layout_width="650px"
+        android:layout_height="110px"
+        android:layout_x = "230px"
+        android:layout_y = "760px"
+        android:textSize = "13pt"
+        android:background="@null"
+        android:textColor="@android:color/white"
+        />
+
+    <EditText
+        android:id="@+id/editText_pw"
+        android:layout_width="650px"
+        android:layout_height="110px"
+        android:layout_x = "230px"
+        android:layout_y = "860px"
+        android:textSize = "13pt"
+        android:inputType="textPassword"
+        android:background="@null"
+        android:textColor="@android:color/white"
+        />
+
+
     <Button
         android:layout_width="600px"
         android:layout_height="140px"

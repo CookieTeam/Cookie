@@ -33,4 +33,10 @@ public class TodayActivity extends AppCompatActivity implements View.OnClickList
                 break;
         }
     }
+
+    @Override
+    public void onBackPressed() {
+        finishAffinity();
+        super.onBackPressed();
+    }
 }

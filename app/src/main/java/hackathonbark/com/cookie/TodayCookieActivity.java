@@ -1,5 +1,8 @@
 package hackathonbark.com.cookie;
 
+import android.os.Bundle;
+
+
 import android.app.Dialog;
 import android.content.Intent;
 import android.graphics.Color;
@@ -12,7 +15,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -25,7 +27,6 @@ import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
-import java.util.UUID;
 
 /**
  * Created by BaeSungSin on 2017-04-29.
@@ -59,7 +60,7 @@ public class TodayCookieActivity extends AppCompatActivity implements View.OnCli
 
                             Typeface type  = Typeface.createFromAsset(getAssets(), "DXPnMStd-Regular.otf");
                             textView.setTypeface(type);
-                            textView.setText(str);
+//                            textView.setText(str);
 
                         }
                     });

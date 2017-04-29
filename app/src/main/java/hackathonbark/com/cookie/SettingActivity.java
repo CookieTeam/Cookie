@@ -1,6 +1,5 @@
 package hackathonbark.com.cookie;
 
-import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -9,7 +8,6 @@ import android.support.v4.app.FragmentStatePagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
-import android.widget.EditText;
 
 /**
  * Created by BaeSungSin on 2017-04-29.
@@ -29,6 +27,7 @@ public class SettingActivity extends AppCompatActivity implements View.OnClickLi
 
     public void onClick(View v) {
         switch(v.getId()) {
+
         }
     }
 
