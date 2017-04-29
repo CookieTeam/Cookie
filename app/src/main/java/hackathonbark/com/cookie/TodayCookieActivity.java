@@ -60,7 +60,7 @@ public class TodayCookieActivity extends AppCompatActivity implements View.OnCli
 
                             Typeface type  = Typeface.createFromAsset(getAssets(), "DXPnMStd-Regular.otf");
                             textView.setTypeface(type);
-//                            textView.setText(str);
+                            textView.setText(str);
 
                         }
                     });
@@ -74,7 +74,7 @@ public class TodayCookieActivity extends AppCompatActivity implements View.OnCli
             }
         }).start();
 
-//        findViewById(R.id.action_b).setOnClickListener(this);
+        findViewById(R.id.action_b).setOnClickListener(this);
         findViewById(R.id.textViewCookie).setOnClickListener(this);
 
     }
