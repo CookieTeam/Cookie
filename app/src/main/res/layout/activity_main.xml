@@ -11,7 +11,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:id="@+id/imageView"
-        android:src="@drawable/w5"
+        android:src="@drawable/final-03"
         android:layout_x="0dp"
         android:layout_y="0dp"
         android:background="@android:color/black" />
