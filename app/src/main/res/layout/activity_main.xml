@@ -11,7 +11,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:id="@+id/imageView"
-        android:src="@drawable/final-03"
+        android:src="@drawable/f3"
         android:layout_x="0dp"
         android:layout_y="0dp"
         android:background="@android:color/black" />
@@ -21,9 +21,9 @@
         android:layout_width="650px"
         android:layout_height="110px"
         android:layout_x = "230px"
-        android:layout_y = "760px"
+        android:layout_y = "810px"
         android:textSize = "13pt"
-        android:background="@null"
+        android:background="@color/test"
         android:textColor="@android:color/white"
         />
 
@@ -32,10 +32,10 @@
         android:layout_width="650px"
         android:layout_height="110px"
         android:layout_x = "230px"
-        android:layout_y = "860px"
+        android:layout_y = "910px"
         android:textSize = "13pt"
         android:inputType="textPassword"
-        android:background="@null"
+        android:background="@color/test"
         android:textColor="@android:color/white"
         />
 
@@ -47,7 +47,7 @@
         android:layout_y="1190px"
 
         android:id="@+id/btnLogin"
-        android:background="@android:color/transparent"
+        android:background="@color/test"
         style="@style/Widget.AppCompat.Button.Borderless" />
 
 
@@ -58,7 +58,7 @@
         android:layout_y="1365px"
 
         android:id="@+id/btnSignUp"
-        android:background="@android:color/transparent"
+        android:background="@color/test"
         style="@style/Widget.AppCompat.Button.Borderless" />
 
     <Button
@@ -68,6 +68,6 @@
         android:layout_y="1530px"
 
         android:id="@+id/btnFacebook"
-        android:background="@android:color/transparent"
+        android:background="@color/test"
         style="@style/Widget.AppCompat.Button.Borderless" />
 </AbsoluteLayout>

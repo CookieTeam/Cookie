@@ -18,6 +18,18 @@
         <!--style="@style/Widget.AppCompat.Button.Borderless" />-->
 
 
+    <com.getbase.floatingactionbutton.FloatingActionButton
+        android:id="@+id/action_a"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:fab_colorNormal="#fff"
+        app:fab_title="Action A"
+        app:fab_labelStyle="@style/menu_labels_style"
+        app:fab_colorPressed="#aaa"
+        android:layout_x="181dp"
+        android:layout_y="647dp" />
+
+
 
     <ImageView
         android:layout_width="match_parent"
@@ -25,22 +37,18 @@
         android:id="@+id/imageView"
         android:layout_alignParentTop="true"
         android:layout_alignParentStart="true"
-        android:src="@drawable/w3"
+        android:src="@drawable/f9"
         android:layout_x="0dp"
         android:layout_y="0dp" />
 
 
-    <TextView
-        android:layout_width="840px"
-        android:layout_height="1400px"
-        android:layout_x="120px"
-        android:layout_y="400px"
-        android:background="#fafafa"
-        android:textAlignment="center"
-        android:gravity="center"
-        android:textSize="20dp"
-        android:id="@+id/textViewCookie"
-        />
+    <Button
+        android:layout_width="100px"
+        android:layout_height="100px"
+        android:background="@color/test"
+        android:layout_x="164dp"
+        android:layout_y="576dp"
+        android:id="@+id/btnTodayCookiePlay" />
 
     <com.getbase.floatingactionbutton.FloatingActionsMenu
         android:id="@+id/multiple_actions"
@@ -50,21 +58,23 @@
         app:fab_addButtonColorPressed="#aaa"
         app:fab_addButtonPlusIconColor="#333"
         app:fab_icon="@mipmap/ic_launcher"
-        app:fab_expandDirection="up"
+        app:fab_expandDirection="down"
 
 
         android:foregroundGravity="right"
         android:layout_marginStart="25dp"
         android:layout_below="@+id/dialog"
-        android:layout_alignParentStart="true">
+        android:layout_alignParentStart="true"
+        android:layout_x="289dp"
+        android:layout_y="3dp">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="play sound"
+            android:text="Facebook"
             style="@style/menu_labels_style"/>
         <com.getbase.floatingactionbutton.FloatingActionButton
-            android:id="@+id/action_a"
+            android:id="@+id/btnTodaySetting"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:fab_colorNormal="#fff"
@@ -72,8 +82,13 @@
             app:fab_labelStyle="@style/menu_labels_style"
             app:fab_colorPressed="#aaa"/>
 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kakaotalk"
+            style="@style/menu_labels_style"/>
         <com.getbase.floatingactionbutton.FloatingActionButton
-            android:id="@+id/action_b"
+            android:id="@+id/btnTodayInbox"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:fab_colorNormal="#fff"
@@ -82,5 +97,26 @@
             app:fab_colorPressed="#aaa"/>
 
     </com.getbase.floatingactionbutton.FloatingActionsMenu>
+    <Button
+        android:layout_width="51dp"
+        android:layout_height="wrap_content"
+        android:layout_x="0dp"
+        android:layout_y="12dp"
 
+        android:id="@+id/btnTodayCookieBack"
+        android:background="@color/test"
+        style="@style/Widget.AppCompat.Button.Borderless" />
+
+    <TextView
+        android:layout_width="259dp"
+        android:layout_height="1400px"
+        android:layout_x="50dp"
+        android:layout_y="187dp"
+        android:background="@color/test"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:textSize="20dp"
+
+        android:id="@+id/textViewCookie"
+        />
 </AbsoluteLayout>

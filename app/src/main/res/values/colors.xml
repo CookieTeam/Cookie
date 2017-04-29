@@ -17,4 +17,17 @@
     <color name="greenEnd">#11c612</color>
 
     <color name="eunchan">#00000000</color>
+    <color name="test">#00ff0000</color>
+
+    <color name="bg1s">#9a9bcd</color>
+    <color name="bg1e">#a8b2d5</color>
+    <color name="bg2s">#e09eb5</color>
+    <color name="bg2e">#df9db6</color>
+    <color name="bg3s">#ec939b</color>
+    <color name="bg3e">#f9c497</color>
+    <color name="bg4s">#f8e6c4</color>
+    <color name="bg4e">#f9bb98</color>
+    <color name="bg5s">#f3c3b3</color>
+    <color name="bg5e">#f6c79f</color>
+
 </resources>

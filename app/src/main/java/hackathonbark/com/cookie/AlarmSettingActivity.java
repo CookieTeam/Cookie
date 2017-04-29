@@ -30,14 +30,14 @@ public class AlarmSettingActivity extends AppCompatActivity implements View.OnCl
         editText_hour.setTypeface(type);
         editText_minute.setTypeface(type);
 
-        findViewById(R.id.btnCheck).setOnClickListener(this);
-
+        findViewById(R.id.btnAlarmBack).setOnClickListener(this);
+        findViewById(R.id.btnAlarmExit).setOnClickListener(this);
 
     }
 
     public void onClick(View v) {
         switch(v.getId()) {
-            case R.id.btnCheck:
+            case R.id.btnAlarmExit:
 //                startActivity(new Intent(this, TodayActivity.class));
                 AlarmManager alarmManager = (AlarmManager) getSystemService(Context.ALARM_SERVICE);
                 EditText hourEditText = (EditText) findViewById(R.id.editText_hour);
@@ -55,6 +55,10 @@ public class AlarmSettingActivity extends AppCompatActivity implements View.OnCl
 
                 alarmManager.setExact(AlarmManager.RTC, calendar.getTimeInMillis(), alarmIntent);
                 Toast.makeText(this, "설정되었습니다", Toast.LENGTH_SHORT).show();
+                finish();
+                break;
+            case R.id.btnAlarmBack:
+                startActivity(new Intent(this, TypeSettingActivity.class));
                 finish();
                 break;
         }

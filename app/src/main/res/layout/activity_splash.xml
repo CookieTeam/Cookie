@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_splash"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="hackathonbark.com.cookie.SplashActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/imgSplashBackground"
+        android:src="@drawable/background"
+        android:layout_x="0dp"
+        android:layout_y="0dp"
+        android:background="@android:color/black" />
+
+    <ImageView
+        android:layout_width="250px"
+        android:layout_height="250px"
+        android:layout_x="490px"
+        android:layout_y="600px"
+        android:id="@+id/imgSplashCookie1"
+        android:src="@drawable/cookie1"/>
+
+    <ImageView
+        android:layout_width="250px"
+        android:layout_height="250px"
+        android:layout_x="360px"
+        android:layout_y="600px"
+        android:rotation="180"
+        android:id="@+id/imgSplashCookie2"
+        android:src="@drawable/cookie1"/>
+
+    <ImageView
+        android:layout_width="125px"
+        android:layout_height="125px"
+        android:layout_x="490px"
+        android:layout_y="660px"
+        android:id="@+id/imgSplashLogo"
+        android:visibility="invisible"
+        android:src="@drawable/logo1"/>
+
+    <ImageView
+        android:layout_width="500px"
+        android:layout_height="500px"
+        android:layout_x="300px"
+        android:layout_y="900px"
+        android:id="@+id/imgSplashTitle"
+        android:src="@drawable/title1"/>
+</AbsoluteLayout>

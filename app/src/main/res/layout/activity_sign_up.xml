@@ -12,16 +12,16 @@
         android:id="@+id/imageView"
         android:layout_alignParentTop="true"
         android:layout_alignParentStart="true"
-        android:src="@drawable/w6"/>
+        android:src="@drawable/f4"/>
 
     <EditText
         android:id="@+id/edittext_id"
         android:layout_width="500px"
         android:layout_height="110px"
         android:layout_x = "500px"
-        android:layout_y = "700px"
+        android:layout_y = "500px"
         android:textSize = "13pt"
-        android:background="@null"
+        android:background="@color/test"
         android:textColor="@android:color/white"
         />
 
@@ -31,10 +31,10 @@
         android:layout_width="500px"
         android:layout_height="110px"
         android:layout_x = "500px"
-        android:layout_y = "900px"
+        android:layout_y = "700px"
         android:textSize = "13pt"
         android:inputType="textPassword"
-        android:background="@null"
+        android:background="@color/test"
         android:textColor="@android:color/white"
 
         />
@@ -43,18 +43,18 @@
         android:id="@+id/btnMan"
         android:layout_width="130px"
         android:layout_height="130px"
-        android:layout_x="500px"
-        android:layout_y="1120px"
-
+        android:layout_x="480px"
+        android:layout_y="920px"
+        android:background="@color/test"
         style="@style/Widget.AppCompat.Button.Borderless" />
 
     <Button
         android:id="@+id/btnWoman"
         android:layout_width="130px"
         android:layout_height="130px"
-        android:layout_x="650px"
-        android:layout_y="1120px"
-
+        android:layout_x="620px"
+        android:layout_y="920px"
+        android:background="@color/test"
         style="@style/Widget.AppCompat.Button.Borderless" />
 
 
@@ -63,9 +63,9 @@
         android:layout_width="500px"
         android:layout_height="110px"
         android:layout_x = "500px"
-        android:layout_y = "1280px"
+        android:layout_y = "1080px"
         android:textSize = "13pt"
-        android:background="@null"
+        android:background="@color/test"
         android:textColor="@android:color/white"
         />
 
@@ -73,10 +73,29 @@
         android:layout_width="630px"
         android:layout_height="140px"
         android:layout_x="240px"
-        android:layout_y="1610px"
+        android:layout_y="1410px"
 
         android:id="@+id/btnLogin"
-        android:background="@android:color/transparent"
+        android:background="@color/test"
         style="@style/Widget.AppCompat.Button.Borderless" />
 
+    <Button
+        android:layout_width="51dp"
+        android:layout_height="wrap_content"
+        android:layout_x="302dp"
+        android:layout_y="10dp"
+
+        android:id="@+id/btnSignUpExit"
+        android:background="@color/test"
+        style="@style/Widget.AppCompat.Button.Borderless" />
+
+    <Button
+        android:layout_width="51dp"
+        android:layout_height="wrap_content"
+        android:layout_x="0dp"
+        android:layout_y="12dp"
+
+        android:id="@+id/btnSignUpBack"
+        android:background="@color/test"
+        style="@style/Widget.AppCompat.Button.Borderless" />
 </AbsoluteLayout>

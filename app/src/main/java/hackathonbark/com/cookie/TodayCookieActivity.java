@@ -34,58 +34,32 @@ import java.net.URL;
 
 public class TodayCookieActivity extends AppCompatActivity implements View.OnClickListener{
 
+    String rurl = "";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_today_cookie);
 
-        new Thread(new Runnable() {
-            @Override
-            public void run() {
-                URL url = null;
-                try {
-                    url = new URL("https://i0jhkm18rh.execute-api.ap-northeast-2.amazonaws.com/startup/cookie?user_id=1");
-                    HttpURLConnection con = (HttpURLConnection) url.openConnection();
-                    InputStream in = new BufferedInputStream(con.getInputStream());
-                    String res = convertStreamToString(in);
-                    Log.d("eunchan", res);
+        TextView tv = (TextView)findViewById(R.id.textViewCookie);
+        tv.setText(getIntent().getStringExtra("content") + "\n\n" + getIntent().getStringExtra("writer"));
+        rurl = getIntent().getStringExtra("rurl");
 
-                    JSONObject json = new JSONObject(res);
-                    final String str = json.getJSONObject("result").getString("memo");
-                    runOnUiThread(new Runnable() {
-                        @Override
-                        public void run() {
-                            TextView textView = (TextView) findViewById(R.id.textViewCookie);
-//                            Toast.makeText(TodayCookieActivity.this, str, Toast.LENGTH_SHORT).show();
+        Typeface type = Typeface.createFromAsset(getAssets(), "DXPnMStd-Regular.otf");
+        ((TextView)findViewById(R.id.textViewCookie)).setTypeface(type);
 
-                            Typeface type  = Typeface.createFromAsset(getAssets(), "DXPnMStd-Regular.otf");
-                            textView.setTypeface(type);
-                            textView.setText(str);
-
-                        }
-                    });
-                } catch (MalformedURLException e) {
-                    e.printStackTrace();
-                } catch (IOException e) {
-                    e.printStackTrace();
-                } catch (JSONException e) {
-                    e.printStackTrace();
-                }
-            }
-        }).start();
-
-        findViewById(R.id.action_b).setOnClickListener(this);
         findViewById(R.id.textViewCookie).setOnClickListener(this);
+        findViewById(R.id.btnTodayCookieBack).setOnClickListener(this);
+        findViewById(R.id.btnTodayCookiePlay).setOnClickListener(this);
 
     }
 
     public void onClick(View v) {
         switch(v.getId()) {
-            case R.id.action_b:
+            case R.id.btnTodayCookiePlay:
                 MediaPlayer player = new MediaPlayer();
                 player.setAudioStreamType(AudioManager.STREAM_MUSIC);
                 try {
-                    player.setDataSource("https://s3.ap-northeast-2.amazonaws.com/startupweend/record.m4a");
+                    player.setDataSource(rurl);
                     player.prepare();
                     player.start();
                 } catch (IOException e) {
@@ -99,6 +73,9 @@ public class TodayCookieActivity extends AppCompatActivity implements View.OnCli
                 dialog.setContentView(R.layout.dialog_today_cookie);
                 dialog.setCancelable(true);
                 dialog.show();
+                break;
+            case R.id.btnTodayCookieBack:
+                finish();
                 break;
         }
     }

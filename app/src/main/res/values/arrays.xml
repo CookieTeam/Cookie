@@ -2,22 +2,16 @@
 <resources>
 
     <string-array name="countries">
-        <item>Argentina</item>
-        <item>Bolivia</item>
-        <item>Brazil</item>
-        <item>Chile</item>
-        <item>Costa Rica</item>
-        <item>Dominican Republic</item>
-        <item>Mexico</item>
-        <item>Nicaragua</item>
-        <item>Peru</item>
-        <item>Venezuela</item>
-        <item>Cuba</item>
-        <item>Ecuador</item>
-        <item>El Salvador</item>
-        <item>Haiti</item>
-        <item>Panama</item>
-        <item>Paraguay</item>
+        <item>자존감</item>
+        <item>행복</item>
+        <item>사랑</item>
+        <item>슬픔</item>
+        <item>인간관계</item>
+        <item>가족</item>
+        <item>진로</item>
+        <item>직장</item>
+        <item>꿈</item>
+        <item>돈</item>
     </string-array>
 
     <!--<integer-array name="images">-->

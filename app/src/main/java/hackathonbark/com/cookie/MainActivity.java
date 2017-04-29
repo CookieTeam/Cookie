@@ -6,6 +6,8 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.EditText;
 import android.widget.Toast;
 
@@ -19,6 +21,12 @@ import java.util.Arrays;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
     private CallbackManager callbackManager;
+
+    private void animateAlph(int i) {
+        Animation animAlpha = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.alpha);
+        animAlpha.reset();
+        findViewById(i).startAnimation(animAlpha);
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -69,6 +77,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         findViewById(R.id.btnLogin).setOnClickListener(this);
         findViewById(R.id.btnSignUp).setOnClickListener(this);
         findViewById(R.id.btnFacebook).setOnClickListener(this);
+
+        animateAlph(R.id.imageView);
     }
 
     @Override
