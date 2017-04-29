@@ -6,22 +6,38 @@
     android:layout_height="match_parent"
     tools:context="hackathonbark.com.cookie.TodayCookieActivity">
 
+    <!--<Button-->
+        <!--android:layout_width="500px"-->
+        <!--android:layout_height="280px"-->
+        <!--android:layout_x="310px"-->
+        <!--android:layout_y="850px"-->
+
+        <!--android:id="@+id/btnCookie"-->
+        <!--android:background="@android:color/transparent"-->
+        <!--style="@style/Widget.AppCompat.Button.Borderless" />-->
+
+
+
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:id="@+id/imageView"
         android:layout_alignParentTop="true"
         android:layout_alignParentStart="true"
-        android:src="@drawable/w3"/>
+        android:src="@drawable/w3"
+        android:layout_x="0dp"
+        android:layout_y="0dp" />
 
-    <Button
-        android:layout_width="500px"
-        android:layout_height="280px"
-        android:layout_x="310px"
-        android:layout_y="850px"
 
-        android:id="@+id/btnCookie"
-        android:background="@android:color/transparent"
-        style="@style/Widget.AppCompat.Button.Borderless" />
-
+    <TextView
+        android:layout_width="840px"
+        android:layout_height="1400px"
+        android:layout_x="120px"
+        android:layout_y="400px"
+        android:background="#fafafa"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:id="@+id/textViewCookie"
+        />
 </AbsoluteLayout>

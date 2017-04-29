@@ -37,4 +37,14 @@
         android:background="@android:color/transparent"
         style="@style/Widget.AppCompat.Button.Borderless" />
 
+    <Button
+        android:layout_width="120px"
+        android:layout_height="120px"
+        android:layout_x="305px"
+        android:layout_y="1530px"
+
+        android:id="@+id/btnFacebook"
+        android:background="@android:color/transparent"
+        style="@style/Widget.AppCompat.Button.Borderless" />
+
 </AbsoluteLayout>
