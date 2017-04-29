@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/activity_sign_up"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -40,4 +41,46 @@
         android:textSize="20dp"
         android:id="@+id/textViewCookie"
         />
+
+    <com.getbase.floatingactionbutton.FloatingActionsMenu
+        android:id="@+id/multiple_actions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:fab_addButtonColorNormal="#fff"
+        app:fab_addButtonColorPressed="#aaa"
+        app:fab_addButtonPlusIconColor="#333"
+        app:fab_icon="@mipmap/ic_launcher"
+        app:fab_expandDirection="up"
+
+
+        android:foregroundGravity="right"
+        android:layout_marginStart="25dp"
+        android:layout_below="@+id/dialog"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="play sound"
+            style="@style/menu_labels_style"/>
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/action_a"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_colorNormal="#fff"
+            app:fab_title="Action A"
+            app:fab_labelStyle="@style/menu_labels_style"
+            app:fab_colorPressed="#aaa"/>
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/action_b"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_colorNormal="#fff"
+            app:fab_title="Action with a very long name that won\'t fit on the screen"
+            app:fab_labelStyle="@style/menu_labels_style"
+            app:fab_colorPressed="#aaa"/>
+
+    </com.getbase.floatingactionbutton.FloatingActionsMenu>
+
 </AbsoluteLayout>
