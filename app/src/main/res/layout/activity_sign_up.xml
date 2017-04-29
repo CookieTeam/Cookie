@@ -14,6 +14,61 @@
         android:layout_alignParentStart="true"
         android:src="@drawable/w6"/>
 
+    <EditText
+        android:id="@+id/edittext_id"
+        android:layout_width="500px"
+        android:layout_height="110px"
+        android:layout_x = "500px"
+        android:layout_y = "700px"
+        android:textSize = "13pt"
+        android:background="@null"
+        android:textColor="@android:color/white"
+        />
+
+
+    <EditText
+        android:id="@+id/edittext_pw"
+        android:layout_width="500px"
+        android:layout_height="110px"
+        android:layout_x = "500px"
+        android:layout_y = "900px"
+        android:textSize = "13pt"
+        android:inputType="textPassword"
+        android:background="@null"
+        android:textColor="@android:color/white"
+
+        />
+
+    <Button
+        android:id="@+id/btnMan"
+        android:layout_width="130px"
+        android:layout_height="130px"
+        android:layout_x="500px"
+        android:layout_y="1120px"
+
+        style="@style/Widget.AppCompat.Button.Borderless" />
+
+    <Button
+        android:id="@+id/btnWoman"
+        android:layout_width="130px"
+        android:layout_height="130px"
+        android:layout_x="650px"
+        android:layout_y="1120px"
+
+        style="@style/Widget.AppCompat.Button.Borderless" />
+
+
+    <EditText
+        android:id="@+id/edittext_age"
+        android:layout_width="500px"
+        android:layout_height="110px"
+        android:layout_x = "500px"
+        android:layout_y = "1280px"
+        android:textSize = "13pt"
+        android:background="@null"
+        android:textColor="@android:color/white"
+        />
+
     <Button
         android:layout_width="630px"
         android:layout_height="140px"

@@ -31,9 +31,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         EditText EditText_id = (EditText)findViewById(R.id.editText_id);
         EditText EditText_pw = (EditText)findViewById(R.id.editText_pw);
 
-
-     //   Typeface typeface = Typeface.createFromAsset(getAssets(), "DXPnMStd-Reuglar.otf");
-
         Typeface type  = Typeface.createFromAsset(getAssets(), "DXPnMStd-Regular.otf");
         EditText_id.setTypeface(type);
         EditText_pw.setTypeface(type);

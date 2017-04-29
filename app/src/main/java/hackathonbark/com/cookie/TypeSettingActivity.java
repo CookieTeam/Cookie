@@ -31,7 +31,7 @@ public class TypeSettingActivity extends AppCompatActivity {
 //                        ContextCompat.getColor(TypeSettingActivity.this, android.R.color.white),
 //                        ContextCompat.getDrawable(TypeSettingActivity.this, images.getResourceId(i, 0))));
                 add(new PickerItem(titles[i], ContextCompat.getDrawable(TypeSettingActivity.this, R.drawable.i), true,
-                        colors.getColor((i * 2) % 8, 0), new BubbleGradient(), 0.1f,
+                        colors.getColor((i * 2) % 8, 0), null, 0.1f,
                         Typeface.createFromAsset(getAssets(), "DXPnMStd-Regular.otf"), getResources().getColor(R.color.white, null), 80f,
                         ContextCompat.getDrawable(TypeSettingActivity.this, R.drawable.transparent)));
             }
