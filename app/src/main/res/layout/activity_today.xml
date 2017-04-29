@@ -4,7 +4,7 @@
     android:id="@+id/activity_sign_up"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="hackathonbark.com.cookie.SignUpActivity">
+    tools:context="hackathonbark.com.cookie.TodayActivity">
 
     <ImageView
         android:layout_width="match_parent"
@@ -12,16 +12,28 @@
         android:id="@+id/imageView"
         android:layout_alignParentTop="true"
         android:layout_alignParentStart="true"
-        android:src="@drawable/w6"/>
+        android:src="@drawable/w1"/>
 
     <Button
-        android:layout_width="630px"
-        android:layout_height="140px"
-        android:layout_x="240px"
-        android:layout_y="1610px"
+        android:layout_width="160px"
+        android:layout_height="160px"
+        android:layout_x="40px"
+        android:layout_y="40px"
 
-        android:id="@+id/btnLogin"
+        android:id="@+id/btnSetting"
         android:background="@android:color/transparent"
         style="@style/Widget.AppCompat.Button.Borderless" />
+
+    <Button
+    android:layout_width="500px"
+    android:layout_height="280px"
+    android:layout_x="310px"
+    android:layout_y="850px"
+
+    android:id="@+id/btnCookie"
+    android:background="@android:color/transparent"
+    style="@style/Widget.AppCompat.Button.Borderless" />
+
+
 
 </AbsoluteLayout>

@@ -18,11 +18,8 @@
 
         <activity
             android:name=".MainActivity"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen" />
-        <activity
-            android:name=".SignUpActivity"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen"></activity>
-        <activity android:name=".ChefTestActivity">
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -30,12 +27,38 @@
             </intent-filter>
         </activity>
 
+        <activity android:name=".SignUpActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen">
+
+        </activity>
+
+        <activity android:name=".TodayActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen">
+
+        </activity>
+
+        <activity android:name=".TodayCookieActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen">
+
+        </activity>
+
+        <activity android:name=".SettingActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen">
+
+        </activity>
+
+        <activity android:name=".CookieActivity">
+
+        </activity>
+
         <receiver
             android:name=".CookieBroadcaseReceiver"
             android:enabled="true"
             android:exported="true" />
-
-        <activity android:name=".CookieActivity"></activity>
     </application>
 
 </manifest>
