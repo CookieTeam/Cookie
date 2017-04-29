@@ -29,11 +29,11 @@ p{
 }
 ul{
 	padding:0 0;
-	margin:0 0;	
+	margin:0 0;
 }
 body{
 	padding:0 0;
-	margin:0 0; 
+	margin:0 0;
 	font-family: 'Open Sans', sans-serif;
 }
 .header {
@@ -57,7 +57,7 @@ body{
   margin: 0 15px;
 }
 .logo span {
-  color: #31C3DB;
+  color: #c5664b;
 }
 .top-menu {
   float: right;
@@ -481,7 +481,7 @@ padding-bottom: 2em;
 }
 .button h2 {
   font-size: 2em;
-} 
+}
 span.menu {
 display: block;
  cursor: pointer;
@@ -496,7 +496,7 @@ display: block;
 {
 display:none;
 }
-.top-menu  ul li 
+.top-menu  ul li
 {
 font-size: 14px;
 display:block;
