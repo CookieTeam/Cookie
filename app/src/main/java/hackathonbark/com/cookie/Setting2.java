@@ -1,12 +1,14 @@
 package hackathonbark.com.cookie;
 
+import android.app.Fragment;
 import android.content.Context;
+import android.graphics.Typeface;
 import android.net.Uri;
 import android.os.Bundle;
-import android.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.EditText;
 
 
 /**
@@ -57,6 +59,7 @@ public class Setting2 extends android.support.v4.app.Fragment {
         if (getArguments() != null) {
             mParam1 = getArguments().getString(ARG_PARAM1);
             mParam2 = getArguments().getString(ARG_PARAM2);
+
         }
     }
 
@@ -64,7 +67,22 @@ public class Setting2 extends android.support.v4.app.Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_setting2, container, false);
+
+
+        View v = inflater.inflate(R.layout.fragment_setting2, container, false);
+
+        EditText editText_hour = (EditText)getView().findViewById(R.id.editText_hour);
+        EditText editText_minute = (EditText)getView().findViewById(R.id.editText_minute);
+
+        Typeface type  = Typeface.createFromAsset(getActivity().getAssets(), "DXPnMStd-Regular.otf");
+        editText_hour.setTypeface(type);
+        editText_minute.setTypeface(type);
+
+        return v;
+
+//        return inflater.inflate(R.layout.fragment_setting2, container, false);
+
+
     }
 
     // TODO: Rename method, update argument and hook method into UI event

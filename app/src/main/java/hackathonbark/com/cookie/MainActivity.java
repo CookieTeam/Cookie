@@ -1,10 +1,12 @@
 package hackathonbark.com.cookie;
 
 import android.content.Intent;
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
+import android.widget.EditText;
 import android.widget.Toast;
 
 import com.facebook.CallbackManager;
@@ -13,7 +15,6 @@ import com.facebook.FacebookException;
 import com.facebook.login.LoginManager;
 import com.facebook.login.LoginResult;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
@@ -26,6 +27,22 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         setContentView(R.layout.activity_main);
 //        com.wang.avi.AVLoadingIndicatorView avi = (com.wang.avi.AVLoadingIndicatorView)findViewById(R.id.avi);
 //        avi.show();
+
+        EditText EditText_id = (EditText)findViewById(R.id.editText_id);
+        EditText EditText_pw = (EditText)findViewById(R.id.editText_pw);
+
+
+     //   Typeface typeface = Typeface.createFromAsset(getAssets(), "DXPnMStd-Reuglar.otf");
+
+        Typeface type  = Typeface.createFromAsset(getAssets(), "DXPnMStd-Regular.otf");
+        EditText_id.setTypeface(type);
+        EditText_pw.setTypeface(type);
+
+
+ //       EditText_id.setText(str);
+
+
+
 
 
 //         Facebook Login
