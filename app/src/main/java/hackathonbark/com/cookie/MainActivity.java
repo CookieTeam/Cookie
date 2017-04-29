@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 Toast.makeText(getApplicationContext(), "반갑습니다", Toast.LENGTH_LONG).show();
                 startActivity(new Intent(getApplicationContext(), TodayActivity.class));
                 Log.d("eunchan", "success");
-                finish();
+
             }
 
             @Override
