@@ -14,7 +14,18 @@
         android:src="@drawable/w5"
         android:layout_x="0dp"
         android:layout_y="0dp"
-        android:background="@android:color/holo_red_dark" />
+        android:background="@android:color/black" />
+
+    <Button
+        android:layout_width="600px"
+        android:layout_height="140px"
+        android:layout_x="260px"
+        android:layout_y="1190px"
+
+        android:id="@+id/btnLogin"
+        android:background="@android:color/transparent"
+        style="@style/Widget.AppCompat.Button.Borderless" />
+
 
     <Button
         android:layout_width="500px"
