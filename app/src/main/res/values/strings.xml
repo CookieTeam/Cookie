@@ -1,4 +1,8 @@
 <resources>
     <string name="app_name">Cookie</string>
     <string name="facebook_app_id">433073117052037</string>
+
+    <string name="title_activity_sign_up">SignUpActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
 </resources>
