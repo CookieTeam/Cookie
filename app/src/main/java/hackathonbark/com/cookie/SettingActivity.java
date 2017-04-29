@@ -52,6 +52,8 @@ public class SettingActivity extends AppCompatActivity implements View.OnClickLi
                     return new Setting1();
                 case 1:
                     return new Setting2();
+                case 2:
+                    return new Setting3();
                 default:
                     return null;
             }
