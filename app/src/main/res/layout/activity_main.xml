@@ -70,5 +70,4 @@
         android:id="@+id/btnFacebook"
         android:background="@android:color/transparent"
         style="@style/Widget.AppCompat.Button.Borderless" />
-
 </AbsoluteLayout>

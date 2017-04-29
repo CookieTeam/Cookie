@@ -1,6 +1,15 @@
 package hackathonbark.com.cookie;
 
+import android.os.Bundle;
+
+
+import android.app.Dialog;
+import android.content.Intent;
+import android.graphics.Color;
 import android.graphics.Typeface;
+import android.graphics.drawable.ColorDrawable;
+import android.media.AudioManager;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
@@ -64,10 +73,33 @@ public class TodayCookieActivity extends AppCompatActivity implements View.OnCli
                 }
             }
         }).start();
+
+//        findViewById(R.id.action_b).setOnClickListener(this);
+        findViewById(R.id.textViewCookie).setOnClickListener(this);
+
     }
 
     public void onClick(View v) {
         switch(v.getId()) {
+            case R.id.action_b:
+                MediaPlayer player = new MediaPlayer();
+                player.setAudioStreamType(AudioManager.STREAM_MUSIC);
+                try {
+                    player.setDataSource("https://s3.ap-northeast-2.amazonaws.com/startupweend/record.m4a");
+                    player.prepare();
+                    player.start();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+
+                break;
+            case R.id.textViewCookie:
+                Dialog dialog = new Dialog(TodayCookieActivity.this, R.style.Theme_AppCompat_Light_NoActionBar_FullScreen);
+                dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.argb(100, 0, 0, 0)));
+                dialog.setContentView(R.layout.dialog_today_cookie);
+                dialog.setCancelable(true);
+                dialog.show();
+                break;
         }
     }
 
